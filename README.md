@@ -1,6 +1,6 @@
 # i18n
 
-[![Release](https://img.shields.io/badge/release-1.2.0-brightgreen.svg)]()
+[![Release](https://img.shields.io/badge/release-1.2.1-brightgreen.svg)]()
 [![License](https://img.shields.io/github/license/XiamLiTechnologies/i18n.svg)]()
 [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)]()
 
@@ -12,15 +12,12 @@ Just add one of the following scripts to your website:
 
 #### Not minified
 ```html
-<script src="https://cdn.xiamli.com/i18n-1.2.0.js" integrity="sha384-7G7CDQp8QwWz4ojzoMH/mCbo7Mox/KW9VB86YH8xlJYcwHrHuf9E4Crxk8Z5dx9t" crossorigin="anonymous"></script>
-```
-```html
-<script src="https://cdn.rawgit.com/XiamLiTechnologies/i18n/4f6909ca44ec2ed247e882eb53be92504d7c2abb/i18n.js" integrity="sha384-7G7CDQp8QwWz4ojzoMH/mCbo7Mox/KW9VB86YH8xlJYcwHrHuf9E4Crxk8Z5dx9t" crossorigin="anonymous"></script>
+<script src="https://cdn.xiamli.com/i18n-1.2.1.js" integrity="sha384-X6U44oETXaPdfj87R62NNFloKLth2BCkG3juixF57GnZmi9t6tuSUHbfBt/h47ux" crossorigin="anonymous"></script>
 ```
 
 #### Minified
 ```html
-<script src="https://cdn.xiamli.com/i18n-1.2.0.min.js" integrity="sha384-r4RLiw0da8QqcoAaaPrJMpSor/HKKq2HCBGsat8FWYPVXYSlKteZuaqBjs5iytv1" crossorigin="anonymous"></script>
+<script src="https://cdn.xiamli.com/i18n-1.2.1.min.js" integrity="sha384-4JIDVtoCN7vInlLvSF/TZgqOWdJ5MXYndAuVyf9Dp8WEeMxADrBLk6aAFrl9OOFp" crossorigin="anonymous"></script>
 ```
 
 ## Usage
@@ -72,7 +69,7 @@ So if you're coming from spain and therefore your browsers language is espanol, 
 
 ## Latest Release
 
-Version 1.2.0
+Version 1.2.1
 
 # Author
   - Dorian H. - <dorian@xiamli.com> / <dorian@d0x7.com> - https://d0x7.com

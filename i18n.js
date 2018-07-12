@@ -1,5 +1,5 @@
 /**
- * i18n v1.2.0 - https://github.com/XiamLiTechnologies/i18n
+ * i18n v1.2.1 - https://github.com/XiamLiTechnologies/i18n
  * Copyright (C) 2018 XiamLi Technologies - XiamLi.com
  *
  * This program is free software: you can redistribute it and/or modify
@@ -20,6 +20,12 @@
     const i18n = {};
     const translationCache = {};
     const fallbackLanguage = 'en';
+    const tagsToReplace = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;'
+    };
+
     let currentLanguage;
 
     i18n.getTranslation = function(property, language) {
@@ -45,6 +51,8 @@
             }
 
             let innerText = [].reduce.call(element.childNodes, function(a, b) { return a + (b.nodeType === 3 ? b.textContent : ''); }, '');
+            innerText = replaceTags(innerText);
+
             element.innerHTML = element.innerHTML.replace(innerText, translation);
         });
     };
@@ -74,6 +82,15 @@
                 i18n.translate();
             });
     };
+
+    function replaceTag(tag) {
+        return tagsToReplace[tag] || tag;
+    }
+
+    // Source: https://stackoverflow.com/a/5499821
+    function replaceTags(str) {
+        return str.replace(/[&<>]/g, replaceTag);
+    }
 
     function isEmpty(string) {
         return !string || string.length === 0 || /^\s*$/.test(string);
